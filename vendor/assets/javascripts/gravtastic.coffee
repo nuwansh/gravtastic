@@ -5,6 +5,7 @@ abbreviations =
   size:    's'
   default: 'd'
   rating:  'r'
+  not_found: 'd'
 
 window.Gravtastic = (email, options={}) ->
   id = MD5(email.toString().toLowerCase())
@@ -34,4 +35,5 @@ window.Gravtastic.defaults =
   rating:   'PG'
   secure:   true
   filetype: 'png'
+  not_found: '404'
 
